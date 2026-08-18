@@ -72,10 +72,10 @@ function App() {
                 imagesData.length > 0 && (
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl'>
                         {imagesData.map((image) => (
-                            <ImageCard 
-                                key={image.id} 
-                                download_url={image.download_url} 
-                                author={image.author} 
+                            <ImageCard
+                                key={image.id}
+                                download_url={image.download_url}
+                                author={image.author}
                             />
                         ))}
                     </div>
@@ -84,21 +84,21 @@ function App() {
 
             {/* Pagination Controls */}
             <div className='flex items-center gap-4 mt-8'>
-                <button 
-                    disabled={page === 1 || loading} 
-                    onClick={() => setPage((prev) => Math.max(prev - 1, 1))} 
+                <button
+                    disabled={page === 1 || loading}
+                    onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
                     className='px-4 py-2 rounded-lg font-medium transition duration-200 bg-yellow-500 hover:bg-yellow-400 text-zinc-950 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-yellow-500 cursor-pointer'
                 >
                     Prev
                 </button>
-                
+
                 <span className='text-zinc-300 font-semibold px-2'>
                     Page {page}
                 </span>
 
-                <button 
-                    disabled={page >= 10 || loading} 
-                    onClick={() => setPage((prev) => prev + 1)} 
+                <button
+                    disabled={page >= 10 || loading}
+                    onClick={() => setPage((prev) => prev + 1)}
                     className='px-4 py-2 rounded-lg font-medium transition duration-200 bg-yellow-500 hover:bg-yellow-400 text-zinc-950 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-yellow-500 cursor-pointer'
                 >
                     Next
