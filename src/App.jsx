@@ -38,7 +38,7 @@ function App() {
     }, [page])
 
     return (
-        <div className='ccol-text min-h-screen bg-zinc-950 text-white flex flex-col items-center py-8 px-4 sm:px-8'>
+        <div className='min-h-screen bg-zinc-950 text-white flex flex-col items-center py-8 px-4 sm:px-8'>
             <header className='text-center mb-8'>
                 <h1 className='text-3xl sm:text-4xl font-bold tracking-tight bg-gradient-to-r from-amber-400 to-yellow-200 bg-clip-text text-transparent'>
                     Photo Gallery
